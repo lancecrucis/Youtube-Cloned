@@ -1,0 +1,237 @@
+.header{
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(199, 199, 199);
+    z-index: 100;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    
+}
+.middle-section{
+    
+    flex: 1;
+    margin-left:70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.right-section{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+    
+}
+.hamburger-menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+.youtube-logo{
+    height: 20px;
+}
+.search-button{
+    height: 40px;
+    width: 66px;
+    background-color: rgb(226, 226, 226);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(196, 196, 196);
+    margin-left: -1px;
+    margin-right: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+}
+.voice-button{
+    height: 40px;
+    width: 40px; 
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchbar{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(196, 196, 196);
+    border-radius: 2px;
+    box-shadow: inset 1px 1px 0px rgb(0, 0, 0, 0.2);
+    width: 0;
+    
+}
+.searchbar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 16px;
+}
+.search-icon{
+    height: 25px;
+    
+}
+
+.voice-icon{
+    height: 24px;
+    
+    
+}
+.upload-icon{
+    height: 24px;
+}
+.youtubeapp-icon{
+    height: 24px;
+}
+.notif-icon{
+    height: 24px;
+}
+
+.notification-icon-container{
+    position: relative;
+}
+.notification-count{
+    position: absolute;
+    top: -2px;
+    right: -5px;
+    background-color: rgb(202, 0, 0);
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
+
+
+.my-channel{
+    height: 32px;
+    border-radius: 16px;
+    
+
+}
+.search-button > .tooltip, 
+.voice-button > .tooltip,
+.upload-icon-container > .tooltip,
+.youtubeapp-container > .tooltip,
+.notification-icon-container > .tooltip{
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding:4px;
+    padding-right: 8px;
+    padding-left: 8px;
+    border-radius: 2px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    
+}
+.search-button:hover > .tooltip,
+.voice-button:hover > .tooltip,
+.upload-icon-container:hover > .tooltip,
+.youtubeapp-container:hover > .tooltip,
+.notification-icon-container:hover > .tooltip{
+    opacity: 1;;
+}
+.voice-button{
+    position: relative;
+}
+.upload-icon-container,
+.youtubeapp-container,
+.notification-icon-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.profile-containers .profile-flexbox{
+    display: flex;
+    flex-direction: row;
+    background: white;
+    position: absolute;
+    color: black;
+    left: 0;
+   
+    padding-left: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2px;
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+   
+}
+
+.profile-flexbox .profile-profile{
+    height: 35px;
+    padding: 10px;
+    border-radius: 30px;
+    padding-right: 11px;
+    
+}
+
+.profile-name{
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Roboto, Arial;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+
+.profile-flexbox .subs{
+    padding-right: 18px;
+    font-family: Roboto, Arial;
+    font-size: 13px;
+    color: rgb(95, 95, 95);
+    
+}
+.profile-containers:hover .profile-flexbox{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    
+}
+.profile-containers{
+    
+    height: 40px;
+}
+
+
+
+
+
